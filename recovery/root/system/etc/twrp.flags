@@ -25,11 +25,10 @@ odm		/odm		ext4							wait,logical,first_stage_mount
 /optics_image	emmc		/dev/block/platform/bootdevice/by-name/optics		flags=backup=1;flashimg;display="Optics Image"
 /prism		ext4		/dev/block/platform/bootdevice/by-name/prism		flags=backup=1;display="Prism"
 /prism_image	emmc		/dev/block/platform/bootdevice/by-name/prism		flags=backup=1;flashimg;display="Prism Image"
-/misc		emmc		/dev/block/platform/bootdevice/by-name/misc		flags=backup=1;display="Misc"
 /efs		ext4		/dev/block/platform/bootdevice/by-name/sec_efs		flags=backup=1;display="EFS"
 /modem		emmc		/dev/block/platform/bootdevice/by-name/apnhlos		flags=backup=1;display="Modem"
 
 
 # Removable storage
 /external_sd	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=storage;wipeingui;removable
-/usb-otg	auto		/dev/block/sdf1	/dev/block/sdf				flags=display="USB-OTG";storage;wipeingui;removable
+/usb-otg	auto		/dev/block/sdg1	/dev/block/sdg				flags=display="USB-OTG";storage;wipeingui;removable

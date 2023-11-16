@@ -61,6 +61,7 @@ TARGET_BOARD_PLATFORM_GPU := mali-g52
 TARGET_PREBUILT_KERNEL := device/samsung/a22/prebuilt/Image.gz
 TARGET_PREBUILT_DTB := device/samsung/a22/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/a22/prebuilt/recoverydtbo
+
 #BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
@@ -126,7 +127,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := false
 BOARD_USES_METADATA_PARTITION := true
 
 # TWRP specific build flags
-TW_DEVICE_VERSION := CharlotteDevTH
+TW_DEVICE_VERSION := AL-NOMAN
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -147,7 +148,7 @@ TW_NO_LEGACY_PROPS := true
 TW_NO_BIND_SYSTEM := true
 TW_NO_SCREEN_BLANK := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
-# my additions
+
+# My additions
 TWRP_INCLUDE_LOGCAT := true
 BUILD_BROKEN_DUP_RULES := true
-
